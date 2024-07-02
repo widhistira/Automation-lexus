@@ -23,7 +23,7 @@ public class BaseTest {
     @BeforeMethod
     public void openBrowser()throws InterruptedException{
         //Open Browser
-        WebDriverManager.firefoxdriver().setup();
+        WebDriverManager.chromedriver().setup();
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--disable-notifications");
 
@@ -36,7 +36,7 @@ public class BaseTest {
 
     @AfterMethod
     public void closeBrowser () throws InterruptedException{
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.get().quit();
     }
 

@@ -19,7 +19,7 @@ public class ScrollPage extends BasePage {
     }
 
     public void scrollDownByPixel(){
-        runJavaScriptCommand("window.scrollBy(0,600)");
+        runJavaScriptCommand("window.scrollBy(0,450)");
     }
 
 

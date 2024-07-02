@@ -158,17 +158,17 @@ public class BookPage extends BasePage {
         doClick(slctModel);
     }
 
-    @FindBy(xpath = "//div[@class='select__global_dealers']//div[@class='choices__list choices__list--single']")
+    @FindBy(css = "[value='NX 350h']")
     WebElement clickTestDrive;
     public void clickTestdriveDropBtn(){
         doClick(clickTestDrive);
     }
-//    @FindBy(css = "[data-value='UX 250h']")
-//    WebElement slctNewModel;
-//
-//    public void selectModel() {
-//        doClick(slctNewModel);
-//    }
+    @FindBy(css = "[data-value='UX 300h']")
+    WebElement slctNewModel;
+
+    public void selectModel() {
+        doClick(slctNewModel);
+    }
     @FindBy(css = "[data-value='lexus-test-drive-concierge']")
     WebElement slctTestDrive;
     public void selectTestDriveOption(){
