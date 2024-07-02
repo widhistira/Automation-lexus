@@ -18,7 +18,7 @@ public class BaseTest {
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
     public static ThreadLocal<WebDriverWait> explicitWait = new ThreadLocal<WebDriverWait>();
 
-    public static String urlLoginStg ="https://www.google.com";
+    public static String urlLoginStg ="https://www.lexus.com.sg/en/contact-us/book-a-test-drive.html?model=ux%20300e";
 
     @BeforeMethod
     public void openBrowser()throws InterruptedException{
@@ -36,7 +36,7 @@ public class BaseTest {
 
     @AfterMethod
     public void closeBrowser () throws InterruptedException{
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         driver.get().quit();
     }
 
